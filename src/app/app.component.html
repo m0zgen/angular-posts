@@ -26,6 +26,22 @@
 
   <hr>
 
+  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
+
+  <div *appIfnot="!isVisible">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi magnam, nobis odit repudiandae voluptate.</p>
+  </div>
+
+  <ng-template [appIfnot]="isVisible">
+    <div>
+      <p>NG Template - Lorem ipsum dolor sit amet.</p>
+    </div>
+  </ng-template>
+
+  <div *ngIf="isVisible">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+
 <!--  <app-add-input></app-add-input>-->
 
 </div>

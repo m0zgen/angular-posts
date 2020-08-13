@@ -14,6 +14,7 @@ export class Post {
 })
 export class AppComponent {
   title = 'angular-posts';
+  isVisible = false;
 
   posts: Post[] = [
     {title: 'Post title 1', text: 'Post title text 1', id: 1},
