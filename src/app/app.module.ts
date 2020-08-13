@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { StyleDirective } from './directives/style.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
 import { MultyByPipe } from './pipes/multy-by.pipe';
+import { StringTrimmerPipe } from './pipes/string-trimmer.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MultyByPipe } from './pipes/multy-by.pipe';
     PostComponent,
     StyleDirective,
     IfnotDirective,
-    MultyByPipe
+    MultyByPipe,
+    StringTrimmerPipe
   ],
   imports: [
     BrowserModule,
