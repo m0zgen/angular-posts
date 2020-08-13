@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component';
 import { FormsModule } from '@angular/forms';
 import { StyleDirective } from './directives/style.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
+import { MultyByPipe } from './pipes/multy-by.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IfnotDirective } from './directives/ifnot.directive';
     PostFormComponent,
     PostComponent,
     StyleDirective,
-    IfnotDirective
+    IfnotDirective,
+    MultyByPipe
   ],
   imports: [
     BrowserModule,

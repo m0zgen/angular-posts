@@ -26,7 +26,18 @@
 
   <hr>
 
-  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
+  <h3>Pipe</h3>
+
+  <p>{{ 10 | multyby }}</p>
+  <p>{{ 10 | multyby:2 }}</p>
+  <p>{{ 10 | multyby:4 }}</p>
+  <p>{{ 10 | multyby:8 }}</p>
+  <p>{{ 10 | multyby:10 }}</p>
+
+  <hr>
+
+  <button class="btn" (click)="isVisible = !isVisible">Toggle paragraph</button>
+  <br>
 
   <div *appIfnot="!isVisible">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi magnam, nobis odit repudiandae voluptate.</p>
