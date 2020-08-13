@@ -8,6 +8,8 @@
   <hr>
 
   <app-post
+    [appStyle]="'green'"
+    [dStyles]="{border: '1px solid blue', fontWeight: 'bold'}"
     *ngFor="let p of posts"
     [post]="p"
     (onRemove)="removePost($event)"
